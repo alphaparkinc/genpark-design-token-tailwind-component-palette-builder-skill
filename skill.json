@@ -1,0 +1,39 @@
+{
+  "name": "genpark-design-token-tailwind-component-palette-builder-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Design system token transformer and Tailwind CSS component palette generator ensuring WCAG AAA accessibility contrast.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "design-ai",
+  "tags": [
+    "v0-dev",
+    "21st-dev",
+    "tailwind-tokens",
+    "design-system",
+    "wcag-contrast"
+  ],
+  "inputs": {
+    "primary_brand_hex": {
+      "type": "string"
+    },
+    "surface_theme": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "palette_id": {
+      "type": "string"
+    },
+    "tailwind_config_tokens": {
+      "type": "object"
+    },
+    "wcag_contrast_ratio": {
+      "type": "number"
+    },
+    "design_tokens_css_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
